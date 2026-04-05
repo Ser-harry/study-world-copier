@@ -1,8 +1,3 @@
-import courseMech from "@/assets/course-mechanical.jpg";
-import courseECE from "@/assets/course-ece.jpg";
-import courseEEE from "@/assets/course-eee.jpg";
-import courseCSE from "@/assets/course-cse.jpg";
-
 export interface CourseDetail {
   img: string;
   title: string;
@@ -13,11 +8,9 @@ export interface CourseDetail {
   highlights: string[];
 }
 
-const defaultImg = "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2000&auto=format&fit=crop";
-
 export const engineeringCourses: CourseDetail[] = [
   {
-    img: courseCSE,
+    img: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2000&auto=format&fit=crop",
     title: "B.E Computer Science and Engineering",
     shortTitle: "Computer Science",
     duration: "4 Years",
@@ -26,7 +19,7 @@ export const engineeringCourses: CourseDetail[] = [
     highlights: ["AICTE Approved", "AI & ML Lab", "Cloud Computing", "Hackathon Culture"],
   },
   {
-    img: courseECE,
+    img: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2000&auto=format&fit=crop",
     title: "B.E CSE with Cyber Security",
     shortTitle: "Cyber Security",
     duration: "4 Years",
@@ -35,7 +28,7 @@ export const engineeringCourses: CourseDetail[] = [
     highlights: ["AICTE Approved", "Security Operations Center", "Ethical Hacking", "Industry Tie-ups"],
   },
   {
-    img: courseEEE,
+    img: "https://images.unsplash.com/photo-1555255707-c07966088b7b?q=80&w=2000&auto=format&fit=crop",
     title: "B.E CSE with Artificial Intelligence & Machine Learning (AIML)",
     shortTitle: "AI & ML",
     duration: "4 Years",
@@ -44,7 +37,7 @@ export const engineeringCourses: CourseDetail[] = [
     highlights: ["AICTE Approved", "Deep Learning Labs", "AI Projects", "Research Focus"],
   },
   {
-    img: courseECE,
+    img: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2000&auto=format&fit=crop",
     title: "B.E Electronics and Communication Engineering",
     shortTitle: "Electronics & Communication",
     duration: "4 Years",
@@ -53,7 +46,7 @@ export const engineeringCourses: CourseDetail[] = [
     highlights: ["AICTE Approved", "Advanced Signal Processing Lab", "IoT & Embedded Systems", "Research Opportunities"],
   },
   {
-    img: courseEEE,
+    img: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=2000&auto=format&fit=crop",
     title: "B.E Electrical and Electronics Engineering",
     shortTitle: "Electrical & Electronics",
     duration: "4 Years",
@@ -62,7 +55,7 @@ export const engineeringCourses: CourseDetail[] = [
     highlights: ["AICTE Approved", "Power Systems Lab", "Renewable Energy Focus", "Industrial Training"],
   },
   {
-    img: courseMech,
+    img: "https://images.unsplash.com/photo-1537462715879-360eeb232dd4?q=80&w=2000&auto=format&fit=crop",
     title: "B.E Mechanical Engineering",
     shortTitle: "Mechanical Engineering",
     duration: "4 Years",
@@ -71,7 +64,7 @@ export const engineeringCourses: CourseDetail[] = [
     highlights: ["AICTE Approved", "Ana University Affiliated", "Modern Labs & Workshops", "Industry Partnerships"],
   },
   {
-    img: defaultImg,
+    img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop",
     title: "B.Tech Artificial Intelligence & Data Science (AIDS)",
     shortTitle: "AI & Data Science",
     duration: "4 Years",
@@ -80,7 +73,7 @@ export const engineeringCourses: CourseDetail[] = [
     highlights: ["AICTE Approved", "Big Data Labs", "Data Viz", "Industry Projects"],
   },
   {
-    img: defaultImg,
+    img: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2000&auto=format&fit=crop",
     title: "B.Tech Information Technology",
     shortTitle: "Information Technology",
     duration: "4 Years",
@@ -89,7 +82,7 @@ export const engineeringCourses: CourseDetail[] = [
     highlights: ["AICTE Approved", "IT Infrastructure Labs", "Enterprise Coding", "Internships"],
   },
   {
-    img: defaultImg,
+    img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2000&auto=format&fit=crop",
     title: "Master of Business Administration (MBA)",
     shortTitle: "MBA",
     duration: "2 Years",
@@ -128,7 +121,7 @@ export const artsCourses: CourseDetail[] = [
     highlights: ["Bharathiar University", "Aviation Management", "Industry Visits", "Specialized Training"],
   },
   {
-    img: "https://images.unsplash.com/photo-1586528116311-ad8ed7c508b0?q=80&w=2000&auto=format&fit=crop",
+    img: "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?q=80&w=2000&auto=format&fit=crop",
     title: "BBA Logistics & Supply Chain Management",
     shortTitle: "BBA Logistics",
     duration: "3 Years",
@@ -182,7 +175,7 @@ export const artsCourses: CourseDetail[] = [
     highlights: ["Bharathiar University", "Practical Focus", "Software Tools", "Networking"],
   },
   {
-    img: "https://images.unsplash.com/photo-1551847677-dc82d7624c96?q=80&w=2000&auto=format&fit=crop",
+    img: "https://images.unsplash.com/photo-1573497620053-ea5300f94f21?q=80&w=2000&auto=format&fit=crop",
     title: "BSc Clinical Psychology",
     shortTitle: "BSc Psychology",
     duration: "3 Years",
