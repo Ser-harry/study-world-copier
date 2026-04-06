@@ -43,8 +43,14 @@ const CampusLife = () => (
         <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mt-3 mb-5">
           Beyond the Classroom
         </h2>
+        <p className="text-muted-foreground leading-relaxed mb-4">
+          Life at Study World Institutions offers a vibrant and enriching student experience that goes beyond academics. As a leading educational institution offering Engineering, Arts and Science, and Allied Health Sciences, we provide a dynamic campus environment where students can learn, explore, and grow holistically.
+        </p>
+        <p className="text-muted-foreground leading-relaxed mb-4">
+          From cultural events and technical fests to sports, clubs, and student activities, our campus life encourages active participation and skill development. Students gain exposure to teamwork, leadership, and real-world experiences that prepare them for future careers.
+        </p>
         <p className="text-muted-foreground leading-relaxed">
-          At Study World, campus life is vibrant and enriching. From sports and cultural events to technical clubs and community service, students experience holistic growth in a supportive environment.
+          With modern facilities, a supportive learning atmosphere, and diverse opportunities, campus life at Study World Institutions plays a key role in shaping confident, well-rounded individuals ready to succeed in both professional and personal life.
         </p>
       </div>
     </section>

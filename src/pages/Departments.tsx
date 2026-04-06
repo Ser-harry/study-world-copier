@@ -77,7 +77,7 @@ const Departments = () => (
                 ))}
               </div>
 
-              <Link to="/#admissions">
+              <Link to="/contact">
                 <Button className="bg-secondary hover:bg-secondary/90 text-secondary-foreground px-8 rounded-full font-semibold">
                   Apply Now
                 </Button>
