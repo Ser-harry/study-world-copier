@@ -1,8 +1,29 @@
-import { User } from "lucide-react";
+import { User, Quote } from "lucide-react";
 
 export default function TestimonialSection() {
+  const testimonials = [
+    {
+      name: "Aditya Varma",
+      role: "Software Engineer @ TCS",
+      content: "The placement cell at SWCE provided excellent training. The industry exposure I received here was instrumental in securing my dream job in the software industry.",
+      initials: "AV"
+    },
+    {
+      name: "Kavita Reddy",
+      role: "Design Engineer @ Mahindra",
+      content: "State-of-the-art laboratory facilities and practical workshops gave me the hands-on experience needed for mechanical engineering. Truly a professional environment.",
+      initials: "KR"
+    },
+    {
+      name: "Sandeep Nair",
+      role: "Systems Analyst @ Infosys",
+      content: "Study World offers a holistic learning environment. The focus on both technical excellence and leadership skills has helped me grow immensely in my career.",
+      initials: "SN"
+    }
+  ];
+
   return (
-    <div className="w-full">
+    <section className="py-20 bg-section-alt overflow-hidden">
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     
@@ -11,101 +32,51 @@ export default function TestimonialSection() {
         }
       `}</style>
 
-      {/* Hero Testimonial Section (from demo.tsx) */}
-      <div className="flex flex-col items-center justify-center p-12 md:p-20 w-full bg-blue-700 text-white">
-        <a className="mb-8 md:mb-12" href="https://prebuiltui.com">
-          <img className="h-10 opacity-80 hover:opacity-100 transition-opacity" src="https://prebuiltui.com/logo.svg?p=white&s=white&t=white" alt="logo white" />
-        </a>
-        <div className="flex flex-col items-center max-w-4xl mx-auto">
-          <p className="md:text-4xl text-2xl text-center font-light leading-snug">
-            “Our learners are at the heart of everything we do. Explore their inspiring stories of growth, success, and how we helped them achieve their goals.”
+      <div className="container-custom">
+        <div className="text-center mb-16 px-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-primary mb-4">
+            Alumni Success Stories
+          </h2>
+          <div className="w-20 h-1.5 bg-secondary mx-auto rounded-full"></div>
+          <p className="mt-6 text-muted-foreground max-w-2xl mx-auto text-lg leading-relaxed">
+            Our students have successfully transitioned into leaders at top global firms. Discover how Study World shaped their professional paths.
           </p>
-          <div className="flex items-center gap-4 mt-12 bg-white/10 p-4 rounded-2xl backdrop-blur-sm">
-            <div className="w-14 h-14 md:w-20 md:h-20 rounded-full bg-white/20 flex items-center justify-center border-2 border-white/30">
-              <User size={32} className="text-white" />
-            </div>
-            <div className="text-left">
-              <p className="font-bold text-xl">Donald Jackman</p>
-              <p className="text-blue-200">SWE 1 @ Amazon</p>
-            </div>
-          </div>
         </div>
-        <div className="flex items-center gap-3 mt-12">
-          <div className="w-3 h-3 md:w-4 md:h-4 bg-white rounded-full"></div>
-          <div className="w-3 h-3 md:w-4 md:h-4 bg-white/40 rounded-full"></div>
-          <div className="w-3 h-3 md:w-4 md:h-4 bg-white/40 rounded-full"></div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+          {testimonials.map((t, i) => (
+            <div 
+              key={i} 
+              className="group relative bg-white p-8 rounded-2xl shadow-sm border border-border hover:shadow-xl hover:border-secondary/20 transition-all duration-300"
+            >
+              {/* Floating Quote Icon */}
+              <div className="absolute -top-4 -right-4 bg-secondary text-white p-3 rounded-xl shadow-lg transform group-hover:rotate-12 transition-transform">
+                <Quote size={24} />
+              </div>
+
+              <div className="flex flex-col h-full">
+                <p className="text-foreground/80 italic mb-8 leading-relaxed text-lg">
+                  "{t.content}"
+                </p>
+                
+                <div className="mt-auto flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center border-2 border-primary/20 text-primary font-bold">
+                    {t.initials}
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-primary text-lg leading-tight uppercase tracking-wide">
+                      {t.name}
+                    </h3>
+                    <p className="text-secondary font-semibold text-sm">
+                      {t.role}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-
-      {/* Cards Testimonial Section (from testimonial.tsx) */}
-      <section className="py-24 bg-background">
-        <div className="container mx-auto px-6">
-          <div className="flex flex-wrap items-center justify-center gap-8">
-            {/* Card 1 */}
-            <div className="max-w-80 w-full bg-black text-white rounded-3xl overflow-hidden shadow-2xl hover:scale-[1.02] transition-transform duration-300 border border-white/5">
-              <div className="relative h-48 w-full bg-gradient-to-br from-purple-900 via-black to-blue-900 flex items-center justify-center">
-                <div className="w-24 h-24 rounded-full bg-white/10 flex items-center justify-center backdrop-blur-md border border-white/20">
-                  <User size={48} className="text-white/50" />
-                </div>
-                <div className="absolute bottom-0 z-10 h-32 w-full bg-gradient-to-t pointer-events-none from-black to-transparent"></div>
-              </div>
-              <div className="px-6 pb-8 pt-2">
-                <p className="font-medium border-b border-gray-800 pb-6 text-gray-300 leading-relaxed italic">
-                  “Radiant made undercutting all of our competitors an absolute breeze.”
-                </p>
-                <div className="mt-6">
-                  <p className="text-lg font-bold">John Doe</p>
-                  <p className="text-sm font-medium bg-gradient-to-r from-[#8B5CF6] via-[#E0724A] to-[#9938CA] text-transparent bg-clip-text">
-                    Content Marketing
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Card 2 */}
-            <div className="max-w-80 w-full bg-black text-white rounded-3xl overflow-hidden shadow-2xl hover:scale-[1.02] transition-transform duration-300 border border-white/5">
-              <div className="relative h-48 w-full bg-gradient-to-br from-blue-900 via-black to-indigo-900 flex items-center justify-center">
-                <div className="w-24 h-24 rounded-full bg-white/10 flex items-center justify-center backdrop-blur-md border border-white/20">
-                  <User size={48} className="text-white/50" />
-                </div>
-                <div className="absolute bottom-0 z-10 h-32 w-full bg-gradient-to-t pointer-events-none from-black to-transparent"></div>
-              </div>
-              <div className="px-6 pb-8 pt-2">
-                <p className="font-medium border-b border-gray-800 pb-6 text-gray-300 leading-relaxed italic">
-                  “Radiant made undercutting all of our competitors an absolute breeze.”
-                </p>
-                <div className="mt-6">
-                  <p className="text-lg font-bold">John Doe</p>
-                  <p className="text-sm font-medium bg-gradient-to-r from-[#8B5CF6] via-[#E0724A] to-[#9938CA] text-transparent bg-clip-text">
-                    Content Marketing
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Card 3 */}
-            <div className="max-w-80 w-full bg-black text-white rounded-3xl overflow-hidden shadow-2xl hover:scale-[1.02] transition-transform duration-300 border border-white/5">
-              <div className="relative h-48 w-full bg-gradient-to-br from-pink-900 via-black to-purple-900 flex items-center justify-center">
-                <div className="w-24 h-24 rounded-full bg-white/10 flex items-center justify-center backdrop-blur-md border border-white/20">
-                  <User size={48} className="text-white/50" />
-                </div>
-                <div className="absolute bottom-0 z-10 h-32 w-full bg-gradient-to-t pointer-events-none from-black to-transparent"></div>
-              </div>
-              <div className="px-6 pb-8 pt-2">
-                <p className="font-medium border-b border-gray-800 pb-6 text-gray-300 leading-relaxed italic">
-                  “Radiant made undercutting all of our competitors an absolute breeze.”
-                </p>
-                <div className="mt-6">
-                  <p className="text-lg font-bold">John Doe</p>
-                  <p className="text-sm font-medium bg-gradient-to-r from-[#8B5CF6] via-[#E0724A] to-[#9938CA] text-transparent bg-clip-text">
-                    Content Marketing
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+    </section>
   );
 }
