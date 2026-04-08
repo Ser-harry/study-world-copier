@@ -3,7 +3,7 @@ import { GraduationCap, Calendar, BookMarked, TrendingUp } from "lucide-react";
 const stats = [
   { icon: GraduationCap, value: "5000+", label: "Students" },
   { icon: Calendar, value: "20", label: "Years Legacy" },
-  { icon: BookMarked, value: "5", label: "Courses" },
+  { icon: BookMarked, value: "23", label: "Courses" },
   { icon: TrendingUp, value: "95%", label: "Placement" },
 ];
 

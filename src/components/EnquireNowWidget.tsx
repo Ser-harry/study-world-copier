@@ -18,7 +18,7 @@ const EnquireNowWidget = () => (
       gap: "8px",
       writingMode: "vertical-rl",
       textOrientation: "mixed",
-      background: "linear-gradient(180deg, #16a34a 0%, #15803d 100%)",
+      background: "linear-gradient(180deg, #f97316 0%, #ea580c 100%)",
       color: "#ffffff",
       fontWeight: 700,
       fontSize: "0.82rem",
@@ -27,7 +27,7 @@ const EnquireNowWidget = () => (
       padding: "18px 10px",
       borderTopLeftRadius: "8px",
       borderBottomLeftRadius: "8px",
-      boxShadow: "-4px 0 18px rgba(22,163,74,0.5)",
+      boxShadow: "none",
       textDecoration: "none",
       whiteSpace: "nowrap",
       cursor: "pointer",
@@ -36,14 +36,14 @@ const EnquireNowWidget = () => (
     }}
     onMouseEnter={(e) => {
       const el = e.currentTarget as HTMLAnchorElement;
-      el.style.background = "linear-gradient(180deg, #15803d 0%, #166534 100%)";
-      el.style.boxShadow = "-6px 0 24px rgba(22,163,74,0.7)";
+      el.style.background = "linear-gradient(180deg, #ea580c 0%, #c2410c 100%)";
+      el.style.boxShadow = "none";
       el.style.paddingRight = "14px";
     }}
     onMouseLeave={(e) => {
       const el = e.currentTarget as HTMLAnchorElement;
-      el.style.background = "linear-gradient(180deg, #16a34a 0%, #15803d 100%)";
-      el.style.boxShadow = "-4px 0 18px rgba(22,163,74,0.5)";
+      el.style.background = "linear-gradient(180deg, #f97316 0%, #ea580c 100%)";
+      el.style.boxShadow = "none";
       el.style.paddingRight = "10px";
     }}
   >
