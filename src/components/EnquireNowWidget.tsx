@@ -20,14 +20,18 @@ const EnquireNowWidget = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Create FormData from the event target
     const formData = new FormData(e.currentTarget);
+    
+    // Convert FormData to URLSearchParams to send as application/x-www-form-urlencoded
+    const urlEncodedData = new URLSearchParams();
+    formData.forEach((value, key) => {
+      urlEncodedData.append(key, value.toString());
+    });
     
     try {
       await fetch("https://script.google.com/macros/s/AKfycbwisYnDrAGG9xAXJ4_7IG_LdjfxUQInu0PRBjfx65P-f75m3CDUPy-5NaWhlgeAy6wz/exec", {
         method: "POST",
-        body: formData,
+        body: urlEncodedData,
         mode: "no-cors"
       });
       
