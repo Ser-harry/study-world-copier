@@ -25,8 +25,11 @@ const ContactUs = () => {
     formData.append("course", form.subject || "General Enquiry");
     
     try {
-      // NOTE: Replace URL with actual Google Apps Script Web App URL
-      await new Promise((resolve) => setTimeout(resolve, 800));
+      await fetch("https://script.google.com/macros/s/AKfycbwisYnDrAGG9xAXJ4_7IG_LdjfxUQInu0PRBjfx65P-f75m3CDUPy-5NaWhlgeAy6wz/exec", {
+        method: "POST",
+        body: formData,
+        mode: "no-cors"
+      });
       
       toast({ 
         title: "Message Sent Successfully!", 

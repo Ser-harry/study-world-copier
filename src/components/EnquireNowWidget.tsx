@@ -25,17 +25,11 @@ const EnquireNowWidget = () => {
     const formData = new FormData(e.currentTarget);
     
     try {
-      // NOTE: Replace the URL below with your actual Google Apps Script Web App URL
-      // If it's invalid, it will still seemingly "succeed" due to no-cors. Let's add a fake timeout for UX.
-      await new Promise((resolve) => setTimeout(resolve, 800));
-      
-      /*
-      await fetch("https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec", {
+      await fetch("https://script.google.com/macros/s/AKfycbwisYnDrAGG9xAXJ4_7IG_LdjfxUQInu0PRBjfx65P-f75m3CDUPy-5NaWhlgeAy6wz/exec", {
         method: "POST",
         body: formData,
         mode: "no-cors"
       });
-      */
       
       toast({ 
         title: "Enquiry Submitted Successfully!", 
