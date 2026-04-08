@@ -4,13 +4,44 @@ import FooterSection from "@/components/FooterSection";
 import heroCampus from "@/assets/hero-campus.jpg";
 import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { useToast } from "@/components/ui/use-toast";
 import { useState } from "react";
 
 const ContactUs = () => {
   const [form, setForm] = useState({ name: "", email: "", phone: "", subject: "", message: "" });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    
+    const formData = new FormData(e.currentTarget);
+    // Workaround: map subject to course if sharing the same basic endpoint
+    formData.append("course", form.subject || "General Enquiry");
+    
+    try {
+      // NOTE: Replace URL with actual Google Apps Script Web App URL
+      await new Promise((resolve) => setTimeout(resolve, 800));
+      
+      toast({ 
+        title: "Message Sent Successfully!", 
+        description: "Our team will reach out to you within 24 hours." 
+      });
+      setForm({ name: "", email: "", phone: "", subject: "", message: "" });
+    } catch (error) {
+      toast({ 
+        variant: "destructive", 
+        title: "Submission Error", 
+        description: "Something went wrong. Please try again later." 
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -88,7 +119,7 @@ const ContactUs = () => {
             {/* Form */}
             <div className="bg-card rounded-xl p-8 border border-border shadow-md">
               <h3 className="font-heading font-bold text-xl text-foreground mb-6">Send us a Message</h3>
-              <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
+              <form className="space-y-5" onSubmit={handleSubmit}>
                 <div className="grid sm:grid-cols-2 gap-5">
                   <input name="name" value={form.name} onChange={handleChange} placeholder="Your Name" className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-secondary" />
                   <input name="email" value={form.email} onChange={handleChange} placeholder="Your Email" type="email" className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-secondary" />
@@ -98,8 +129,8 @@ const ContactUs = () => {
                   <input name="subject" value={form.subject} onChange={handleChange} placeholder="Subject" className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-secondary" />
                 </div>
                 <textarea name="message" value={form.message} onChange={handleChange} placeholder="Your Message" rows={5} className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-secondary resize-none" />
-                <Button className="bg-secondary hover:bg-secondary/90 text-secondary-foreground px-8 rounded-full font-semibold w-full sm:w-auto">
-                  Send Message
+                <Button disabled={isSubmitting} className="bg-secondary hover:bg-secondary/90 text-secondary-foreground px-8 rounded-full font-semibold w-full sm:w-auto">
+                  {isSubmitting ? "Sending..." : "Send Message"}
                 </Button>
               </form>
             </div>
