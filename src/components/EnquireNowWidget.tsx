@@ -21,34 +21,29 @@ const EnquireNowWidget = () => {
     e.preventDefault();
     setIsSubmitting(true);
     const formData = new FormData(e.currentTarget);
-    
-    const data = Object.fromEntries(formData.entries());
-    
+
+    const urlEncodedData = new URLSearchParams();
+    formData.forEach((value, key) => {
+      urlEncodedData.append(key, value.toString());
+    });
+
     try {
-      const response = await fetch("https://formsubmit.co/ajax/coimbatore@swehg.com", {
+      await fetch("https://script.google.com/macros/s/AKfycbxD6KN8Hue2IwYKGAj85TLgSc0eX-FVuX7x41MpW6ykMMBZ6T-u8DZLf9wmSgHKlt4/exec", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Accept": "application/json"
-        },
-        body: JSON.stringify({
-          ...data,
-          _subject: "New Student Enquiry - Study World Widget"
-        }),
+        body: urlEncodedData,
+        mode: "no-cors"
       });
-      
-      if (!response.ok) throw new Error("Submission failed");
-      
-      toast({ 
-        title: "Enquiry Submitted Successfully!", 
-        description: "Our admissions team will contact you shortly." 
+
+      toast({
+        title: "Enquiry Submitted Successfully!",
+        description: "Our admissions team will contact you shortly."
       });
       setOpen(false);
     } catch (error) {
-      toast({ 
-        variant: "destructive", 
-        title: "Submission Error", 
-        description: "Something went wrong. Please try again later." 
+      toast({
+        variant: "destructive",
+        title: "Submission Error",
+        description: "Something went wrong. Please try again later."
       });
     } finally {
       setIsSubmitting(false);
@@ -135,12 +130,12 @@ const EnquireNowWidget = () => {
             <Label htmlFor="name">Full Name</Label>
             <Input id="name" name="name" required placeholder="Ex. Rahul Deshmukh" />
           </div>
-          
+
           <div className="space-y-2">
             <Label htmlFor="email">Email Address</Label>
             <Input id="email" name="email" type="email" required placeholder="rahul@example.com" />
           </div>
-          
+
           <div className="space-y-2">
             <Label htmlFor="phone">Phone Number</Label>
             <Input id="phone" name="phone" type="tel" required placeholder="+91 98765 43210" />

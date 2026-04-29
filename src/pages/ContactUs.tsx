@@ -19,36 +19,32 @@ const ContactUs = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
+
+    const formData = new FormData(e.currentTarget);
+    formData.append("course", form.subject || "General Enquiry");
     
+    const urlEncodedData = new URLSearchParams();
+    formData.forEach((value, key) => {
+      urlEncodedData.append(key, value.toString());
+    });
+
     try {
-      const response = await fetch("https://formsubmit.co/ajax/coimbatore@swehg.com", {
+      await fetch("https://script.google.com/macros/s/AKfycbxD6KN8Hue2IwYKGAj85TLgSc0eX-FVuX7x41MpW6ykMMBZ6T-u8DZLf9wmSgHKlt4/exec", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Accept": "application/json"
-        },
-        body: JSON.stringify({
-          name: form.name,
-          email: form.email,
-          phone: form.phone,
-          subject: form.subject || "General Enquiry",
-          message: form.message,
-          _subject: "New Contact Form Enquiry - Study World"
-        }),
+        body: urlEncodedData,
+        mode: "no-cors"
       });
-      
-      if (!response.ok) throw new Error("Submission failed");
-      
-      toast({ 
-        title: "Message Sent Successfully!", 
-        description: "Our team will reach out to you within 24 hours." 
+
+      toast({
+        title: "Message Sent Successfully!",
+        description: "Our team will reach out to you within 24 hours."
       });
       setForm({ name: "", email: "", phone: "", subject: "", message: "" });
     } catch (error) {
-      toast({ 
-        variant: "destructive", 
-        title: "Submission Error", 
-        description: "Something went wrong. Please try again later." 
+      toast({
+        variant: "destructive",
+        title: "Submission Error",
+        description: "Something went wrong. Please try again later."
       });
     } finally {
       setIsSubmitting(false);
