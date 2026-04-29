@@ -55,7 +55,7 @@ export const engineeringCourses: CourseDetail[] = [
     highlights: ["AICTE Approved", "Power Systems Lab", "Renewable Energy Focus", "Industrial Training"],
   },
   {
-    img: "https://images.unsplash.com/photo-1537462715879-360eeb232dd4?q=80&w=2000&auto=format&fit=crop",
+    img: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2000&auto=format&fit=crop",
     title: "B.E Mechanical Engineering",
     shortTitle: "Mechanical Engineering",
     duration: "4 Years",

@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
 import campusLife from "@/assets/campus-life.jpg";
 import heroCampus from "@/assets/hero-campus.jpg";
-import { BookOpen, Award, Users, Target, Eye } from "lucide-react";
+import { BookOpen, Award, Users, Target, Eye, Bird, Aperture } from "lucide-react";
 
 const AboutUs = () => (
   <div className="min-h-screen">
@@ -26,10 +26,10 @@ const AboutUs = () => (
           <div>
             <span className="text-secondary font-semibold text-sm uppercase tracking-widest">About Our Institution</span>
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mt-3 mb-6">
-              Study World Institutions
+              Study World Group of Institutions
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Study World Institutions is a multidisciplinary educational group established in 2009, committed to shaping future-ready professionals through quality education, practical learning, and industry-focused training. With a strong presence in Engineering, Arts and Science and Allied Health Sciences, we aim to provide students with a well-rounded academic experience that goes beyond textbooks.
+              Study World Group of Institutions is a multidisciplinary educational group established in 2009, committed to shaping future-ready professionals through quality education, practical learning, and industry-focused training. With a strong presence in Engineering, Arts and Science and Allied Health Sciences, we aim to provide students with a well-rounded academic experience that goes beyond textbooks.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               Our institutions are built on the belief that education should empower individuals with both knowledge and real-world skills. Across all our colleges, we focus on blending academic excellence with hands-on learning, ensuring students are prepared to meet the demands of today's competitive world.
@@ -51,7 +51,7 @@ const AboutUs = () => (
             <div className="w-14 h-14 rounded-full bg-secondary/10 flex items-center justify-center mb-5">
               <Award className="w-7 h-7 text-secondary" />
             </div>
-            <h3 className="font-heading font-bold text-xl text-foreground mb-3">Engineering College</h3>
+            <h3 className="font-heading font-bold text-xl text-foreground mb-3">College of Engineering</h3>
             <p className="text-muted-foreground leading-relaxed text-sm">
               We offer cutting-edge engineering programs designed to equip students with technical expertise and problem-solving abilities. With modern labs, experienced faculty and exposure to emerging technologies, we help students build strong foundations for careers in the tech-driven world.
             </p>
@@ -60,7 +60,7 @@ const AboutUs = () => (
             <div className="w-14 h-14 rounded-full bg-secondary/10 flex items-center justify-center mb-5">
               <BookOpen className="w-7 h-7 text-secondary" />
             </div>
-            <h3 className="font-heading font-bold text-xl text-foreground mb-3">Arts and Science College</h3>
+            <h3 className="font-heading font-bold text-xl text-foreground mb-3">College of Arts and Science</h3>
             <p className="text-muted-foreground leading-relaxed text-sm">
               Our Arts and Science programs are designed to nurture creativity, critical thinking, and analytical skills. From commerce and management to computer science and humanities, we provide diverse courses that open doors to multiple career paths.
             </p>
@@ -69,7 +69,7 @@ const AboutUs = () => (
             <div className="w-14 h-14 rounded-full bg-secondary/10 flex items-center justify-center mb-5">
               <Users className="w-7 h-7 text-secondary" />
             </div>
-            <h3 className="font-heading font-bold text-xl text-foreground mb-3">Allied Health Science College</h3>
+            <h3 className="font-heading font-bold text-xl text-foreground mb-3">College of Allied Health Sciences</h3>
             <p className="text-muted-foreground leading-relaxed text-sm">
               Focused on healthcare education, our Allied Health Science programs prepare students for vital roles in the medical field. With practical training, clinical exposure and a strong emphasis on patient care, we aim to develop skilled healthcare professionals.
             </p>
@@ -112,8 +112,47 @@ const AboutUs = () => (
           </div>
         </div>
         <p className="text-center text-primary-foreground/70 mt-12 text-base italic">
-          At Study World Institutions, we don't just educate — we prepare students for life.
+          At Study World Group of Institutions, we don't just educate — we prepare students for life.
         </p>
+      </div>
+    </section>
+
+    {/* Global Network Logos */}
+    <section className="py-16 bg-background border-t border-border/50">
+      <div className="container-custom">
+        <div className="flex flex-wrap justify-center gap-10 md:gap-16 items-center opacity-70 hover:opacity-100 transition-opacity duration-300">
+          
+          <div className="flex flex-col items-center text-center">
+            <Bird className="w-10 h-10 mb-2 text-foreground" />
+            <h3 className="font-bold text-lg leading-tight tracking-tight">Dove Green</h3>
+            <p className="text-[10px] uppercase tracking-widest mt-1 text-muted-foreground">Private School</p>
+          </div>
+
+          <div className="flex flex-col items-center text-center">
+            <Aperture className="w-10 h-10 mb-2 text-foreground" />
+            <h3 className="font-bold text-lg leading-tight tracking-tight uppercase">Study World</h3>
+            <p className="text-xs italic mt-1 text-muted-foreground font-serif">College of Engineering</p>
+          </div>
+
+          <div className="flex flex-col items-center text-center">
+            <Aperture className="w-10 h-10 mb-2 text-foreground" />
+            <h3 className="font-bold text-lg leading-tight tracking-tight uppercase">Study World</h3>
+            <p className="text-xs italic mt-1 text-muted-foreground font-serif">Global College Malta</p>
+          </div>
+
+          <div className="flex flex-col items-center text-center">
+            <Aperture className="w-10 h-10 mb-2 text-foreground" />
+            <h3 className="font-bold text-lg leading-tight tracking-tight uppercase">Study World</h3>
+            <p className="text-xs italic mt-1 text-muted-foreground font-serif">Lanka Campus</p>
+          </div>
+
+          <div className="flex flex-col items-center text-center">
+            <Aperture className="w-10 h-10 mb-2 text-foreground" />
+            <h3 className="font-bold text-lg leading-tight tracking-tight uppercase">Study World</h3>
+            <p className="text-xs italic mt-1 text-muted-foreground font-serif">Education Holding Group</p>
+          </div>
+
+        </div>
       </div>
     </section>
 

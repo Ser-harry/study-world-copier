@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
 const institutions = [
-  { label: "Study World Engineering", to: "/institutions/engineering" },
-  { label: "Study World Arts & Science", to: "/institutions/arts" },
-  { label: "Study World Allied Health Sciences", to: "/institutions/allied-health" },
+  { label: "College of Engineering", to: "/institutions/engineering" },
+  { label: "College of Arts", to: "/institutions/arts" },
+  { label: "College of Allied Health Science", to: "/institutions/allied-health" },
 ];
 
 const navItems = [
@@ -40,7 +40,7 @@ const Navbar = () => {
           <img src={logo} alt="Study World College of Engineering" className="h-16 w-16 object-contain" />
           <div className="hidden sm:block">
             <p className="font-heading font-bold text-primary text-lg leading-tight">Study World</p>
-            <p className="text-xs text-muted-foreground">Institutions</p>
+            <p className="text-xs text-muted-foreground">Group of Institutions</p>
           </div>
         </Link>
 

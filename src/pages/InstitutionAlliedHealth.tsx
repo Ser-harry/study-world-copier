@@ -55,10 +55,7 @@ const InstitutionAlliedHealth = () => (
                   <Clock className="w-4 h-4 text-secondary" />
                   <span>{dept.duration}</span>
                 </div>
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <Users className="w-4 h-4 text-secondary" />
-                  <span>{dept.seats} Seats</span>
-                </div>
+
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                   <BookOpen className="w-4 h-4 text-secondary" />
                   <span>UG Programme</span>

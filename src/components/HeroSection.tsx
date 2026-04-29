@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const colleges = [
   { text: "College of Engineering", img: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2670" },
-  { text: "College of Arts & Science", img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=2670" },
+  { text: "College of Arts", img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=2670" },
   { text: "College of Allied Health", img: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=2670" }
 ];
 
@@ -43,7 +43,7 @@ const HeroSection = () => {
         <section id="header" className="mb-2">
           {/* Main Title slightly tighter mb */}
           <BlurFade delay={0.25} inView duration={0.8}>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold text-primary-foreground leading-tight pb-2">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground leading-tight pb-2">
               Study World
             </h1>
           </BlurFade>

@@ -10,11 +10,11 @@ const FooterSection = () => (
             <img src={logo} alt="Study World" className="w-14 h-14 object-contain brightness-200" />
             <div>
               <p className="font-heading font-bold text-lg">Study World</p>
-              <p className="text-xs text-primary-foreground/60">Institutions</p>
+              <p className="text-xs text-primary-foreground/60">Group of Institutions</p>
             </div>
           </div>
           <p className="text-primary-foreground/70 text-sm leading-relaxed">
-            Study World Institutions is a part of Study World Education Holding Group, providing quality education since 2009.
+            Study World Group of Institutions is a part of Study World Education Holding Group, providing quality education since 2006.
           </p>
         </div>
 
@@ -47,7 +47,7 @@ const FooterSection = () => (
       </div>
 
       <div className="border-t border-primary-foreground/10 pt-6 text-center text-sm text-primary-foreground/50">
-        © 2024 Study World Institutions. All Rights Reserved.
+        © 2024 Study World Group of Institutions. All Rights Reserved.
       </div>
     </div>
   </footer>
