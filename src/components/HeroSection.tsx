@@ -54,7 +54,7 @@ const HeroSection = () => {
               index === i && (
                 <div key={college.text} className="absolute inset-x-0 flex justify-center">
                   <BlurFade delay={0.1} inView duration={0.8}>
-                    <span className="text-2xl md:text-4xl lg:text-5xl whitespace-nowrap text-primary-foreground/90 font-medium tracking-tighter block">
+                    <span className="text-2xl md:text-4xl lg:text-5xl font-heading whitespace-nowrap text-primary-foreground/90 font-medium tracking-tighter block">
                       {college.text}
                     </span>
                   </BlurFade>
