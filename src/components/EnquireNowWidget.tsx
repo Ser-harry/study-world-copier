@@ -22,18 +22,22 @@ const EnquireNowWidget = () => {
     setIsSubmitting(true);
     const formData = new FormData(e.currentTarget);
     
-    // Convert FormData to URLSearchParams to send as application/x-www-form-urlencoded
-    const urlEncodedData = new URLSearchParams();
-    formData.forEach((value, key) => {
-      urlEncodedData.append(key, value.toString());
-    });
+    const data = Object.fromEntries(formData.entries());
     
     try {
-      await fetch("https://script.google.com/macros/s/AKfycbwisYnDrAGG9xAXJ4_7IG_LdjfxUQInu0PRBjfx65P-f75m3CDUPy-5NaWhlgeAy6wz/exec", {
+      const response = await fetch("https://formsubmit.co/ajax/coimbatore@swehg.com", {
         method: "POST",
-        body: urlEncodedData,
-        mode: "no-cors"
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify({
+          ...data,
+          _subject: "New Student Enquiry - Study World Widget"
+        }),
       });
+      
+      if (!response.ok) throw new Error("Submission failed");
       
       toast({ 
         title: "Enquiry Submitted Successfully!", 

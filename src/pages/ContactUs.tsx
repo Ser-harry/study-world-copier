@@ -20,22 +20,24 @@ const ContactUs = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    const formData = new FormData(e.currentTarget);
-    // Workaround: map subject to course if sharing the same basic endpoint
-    formData.append("course", form.subject || "General Enquiry");
-    
-    // Convert FormData to URLSearchParams to send as application/x-www-form-urlencoded
-    const urlEncodedData = new URLSearchParams();
-    formData.forEach((value, key) => {
-      urlEncodedData.append(key, value.toString());
-    });
-    
     try {
-      await fetch("https://script.google.com/macros/s/AKfycbwisYnDrAGG9xAXJ4_7IG_LdjfxUQInu0PRBjfx65P-f75m3CDUPy-5NaWhlgeAy6wz/exec", {
+      const response = await fetch("https://formsubmit.co/ajax/coimbatore@swehg.com", {
         method: "POST",
-        body: urlEncodedData,
-        mode: "no-cors"
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          subject: form.subject || "General Enquiry",
+          message: form.message,
+          _subject: "New Contact Form Enquiry - Study World"
+        }),
       });
+      
+      if (!response.ok) throw new Error("Submission failed");
       
       toast({ 
         title: "Message Sent Successfully!", 
