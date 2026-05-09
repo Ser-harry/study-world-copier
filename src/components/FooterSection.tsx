@@ -1,5 +1,5 @@
 import { Phone, Mail, MapPin } from "lucide-react";
-import logo from "@/assets/logo.png";
+
 
 const FooterSection = () => (
   <footer id="contact" className="bg-primary text-primary-foreground">
@@ -7,7 +7,7 @@ const FooterSection = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-12">
         <div>
           <div className="flex items-center gap-3 mb-5">
-            <img src={logo} alt="Study World" className="w-14 h-14 object-contain brightness-200" />
+            <img src="/Study World Logo-01.png" alt="Study World" className="w-14 h-14 object-contain brightness-200" />
             <div>
               <p className="font-heading font-bold text-lg">Study World</p>
               <p className="text-xs text-primary-foreground/60">Group of Institutions</p>

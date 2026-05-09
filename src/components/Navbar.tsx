@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
-import logo from "@/assets/logo.png";
+
 
 const institutions = [
   { label: "College of Engineering", to: "/institutions/engineering" },
@@ -37,7 +37,7 @@ const Navbar = () => {
     <nav className="bg-background shadow-md sticky top-0 z-50">
       <div className="container-custom flex items-center justify-between px-4 sm:px-6 lg:px-8 py-3">
         <Link to="/" className="flex items-center gap-3">
-          <img src={logo} alt="Study World College of Engineering" className="h-16 w-16 object-contain" />
+          <img src="/Study World Logo-01.png" alt="Study World College of Engineering" className="h-16 w-16 object-contain" />
           <div className="hidden sm:block">
             <p className="font-heading font-bold text-primary text-lg leading-tight">Study World</p>
             <p className="text-xs text-muted-foreground">Group of Institutions</p>
