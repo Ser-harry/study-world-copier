@@ -26,7 +26,7 @@ const InstitutionAlliedHealth = () => (
       <div className="container-custom text-center max-w-3xl mx-auto">
         <span className="text-secondary font-semibold text-sm uppercase tracking-widest">Academic Programs</span>
         <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mt-3 mb-5">
-          Allied Health Programmes
+          Allied Health Sciences Programmes
         </h2>
         <p className="text-muted-foreground leading-relaxed">
           Study World College of Allied Health Sciences is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai. 

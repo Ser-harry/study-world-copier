@@ -76,7 +76,7 @@ const AboutUs = () => (
             </div>
             <h3 className="font-heading font-bold text-xl text-foreground mb-3">College of Allied Health Sciences</h3>
             <p className="text-muted-foreground leading-relaxed text-sm">
-              Focused on healthcare education, our Allied Health Science programs prepare students for vital roles in the medical field. With practical training, clinical exposure and a strong emphasis on patient care, we aim to develop skilled healthcare professionals.
+              Focused on healthcare education, our Allied Health Sciences programs prepare students for vital roles in the medical field. With practical training, clinical exposure and a strong emphasis on patient care, we aim to develop skilled healthcare professionals.
             </p>
           </div>
         </div>

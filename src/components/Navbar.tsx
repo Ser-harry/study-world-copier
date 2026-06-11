@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 
 const institutions = [
   { label: "College of Engineering", to: "/institutions/engineering" },
-  { label: "College of Arts", to: "/institutions/arts" },
-  { label: "College of Allied Health Science", to: "/institutions/allied-health" },
+  { label: "College of Arts and Science", to: "/institutions/arts" },
+  { label: "College of Allied Health Sciences", to: "/institutions/allied-health" },
 ];
 
 const navItems = [
