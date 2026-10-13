@@ -69,16 +69,39 @@ const Departments = () => (
                 {dept.highlights.map((h) => (
                   <div key={h} className="flex items-center gap-2 text-sm text-foreground">
                     <CheckCircle className="w-4 h-4 text-secondary flex-shrink-0" />
-                    {h}
+                    <span>{h}</span>
                   </div>
                 ))}
               </div>
 
-              <Link to="/contact">
-                <Button className="bg-secondary hover:bg-secondary/90 text-secondary-foreground px-8 rounded-full font-semibold">
-                  Apply Now
-                </Button>
-              </Link>
+              {dept.careerPathways && dept.careerPathways.length > 0 && (
+                <div className="mb-6 p-4 rounded-xl bg-muted/60 border border-border">
+                  <div className="text-xs font-bold text-foreground mb-2 flex items-center gap-1.5">
+                    <Users className="w-3.5 h-3.5 text-secondary" />
+                    Career Pathways:
+                  </div>
+                  <div className="flex flex-wrap gap-1.5">
+                    {dept.careerPathways.map((career) => (
+                      <span key={career} className="text-xs bg-card px-2.5 py-1 rounded-md border border-border text-foreground font-medium">
+                        {career}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              <div className="flex flex-wrap items-center gap-3">
+                <Link to="/contact">
+                  <Button className="bg-secondary hover:bg-secondary/90 text-secondary-foreground px-8 rounded-full font-semibold">
+                    Apply Now
+                  </Button>
+                </Link>
+                <a href="/#brochures">
+                  <Button variant="outline" className="border-border text-foreground px-6 rounded-full font-semibold">
+                    View SWCE Brochure
+                  </Button>
+                </a>
+              </div>
             </div>
           </div>
         ))}

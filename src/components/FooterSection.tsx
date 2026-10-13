@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 
 const FooterSection = () => (
@@ -10,15 +11,30 @@ const FooterSection = () => (
             <img src="/Study World Logo-01.png" alt="Study World" className="h-24 w-auto object-contain brightness-200" />
           </div>
           <p className="text-primary-foreground/70 text-sm leading-relaxed">
-            Study World Group of Institutions is a part of Study World Education Holding Group, providing quality education since 2006.
+            Study World Group of Institutions is a part of Study World Education Holding Group, empowering students worldwide with quality higher education since 2005.
           </p>
         </div>
 
         <div>
           <h4 className="font-heading font-semibold text-lg mb-5">Quick Links</h4>
           <ul className="space-y-3 text-sm text-primary-foreground/70">
-            {["Home", "About Us", "Courses", "Campus Life", "Contact"].map((l) => (
-              <li key={l}><a href="#" className="hover:text-secondary transition-colors">{l}</a></li>
+            {[
+              { name: "Home", path: "/" },
+              { name: "About Us", path: "/about" },
+              { name: "All Programmes", path: "/#courses" },
+              { name: "Download Brochures", path: "/#brochures" },
+              { name: "Apply for Admission", path: "/#admissions" },
+              { name: "Campus Life", path: "/campus-life" },
+              { name: "Contact Us", path: "/contact" }
+            ].map((link) => (
+              <li key={link.name}>
+                <a 
+                  href={link.path} 
+                  className="hover:text-secondary transition-colors"
+                >
+                  {link.name}
+                </a>
+              </li>
             ))}
           </ul>
         </div>
@@ -42,8 +58,8 @@ const FooterSection = () => (
         </div>
       </div>
 
-      <div className="border-t border-primary-foreground/10 pt-6 text-center text-sm text-primary-foreground/50">
-        © 2024 Study World Group of Institutions. All Rights Reserved.
+      <div className="border-t border-primary-foreground/10 pt-6 text-center text-xs text-primary-foreground/50">
+        © {new Date().getFullYear()} Study World Group of Institutions. Affiliated to Anna University, Bharathiar University & TN Dr. M.G.R. Medical University. All Rights Reserved.
       </div>
     </div>
   </footer>

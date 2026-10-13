@@ -1,14 +1,10 @@
 import TopBar from "@/components/TopBar";
 import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
+import GlobalNetworkSection from "@/components/GlobalNetworkSection";
 import campusLife from "@/assets/campus-life.jpg";
 import heroCampus from "@/assets/hero-campus.jpg";
-import logoDoveGreen from "@/assets/logos/dovegreen1.png";
-import logoSwce from "@/assets/logos/swce.png";
-import logoMalta from "@/assets/logos/malta.png";
-import logoLanka from "@/assets/logos/lanka.png";
-import logoHolding from "@/assets/logos/holiday.png";
-import { BookOpen, Award, Users, Target, Eye, Bird, Aperture } from "lucide-react";
+import { BookOpen, Award, Users, Target, Eye } from "lucide-react";
 
 const AboutUs = () => (
   <div className="min-h-screen">
@@ -122,31 +118,8 @@ const AboutUs = () => (
       </div>
     </section>
 
-    {/* Global Network Logos */}
-    <section className="py-16 bg-background border-t border-border/50">
-      <div className="container-custom">
-        <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center lg:items-center">
-          
-          <div className="lg:w-1/3 shrink-0 text-center lg:text-left">
-            <span className="text-secondary font-semibold text-sm uppercase tracking-widest">Our Reach</span>
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mt-2 mb-4">Our Global Network</h2>
-            <p className="text-muted-foreground text-sm leading-relaxed max-w-md mx-auto lg:mx-0">
-              Study World Education Holding Group extends its educational excellence across the globe, partnering with and operating premier institutions internationally.
-            </p>
-          </div>
-
-          <div className="lg:w-2/3 flex flex-wrap justify-center lg:justify-start gap-8 md:gap-12 items-center opacity-80 hover:opacity-100 transition-opacity duration-300">
-            
-            <img src={logoDoveGreen} alt="Dove Green Private School" className="h-16 w-auto object-contain" />
-            <img src={logoSwce} alt="Study World College of Engineering" className="h-16 w-auto object-contain" />
-            <img src={logoMalta} alt="Study World Global College Malta" className="h-16 w-auto object-contain" />
-            <img src={logoLanka} alt="Study World Lanka Campus" className="h-16 w-auto object-contain" />
-            <img src={logoHolding} alt="Study World Education Holding Group" className="h-16 w-auto object-contain" />
-
-          </div>
-        </div>
-      </div>
-    </section>
+    {/* Global Network Section from Brochure */}
+    <GlobalNetworkSection />
 
     <FooterSection />
   </div>

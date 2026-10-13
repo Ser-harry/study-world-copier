@@ -13,6 +13,8 @@ const navItems = [
   { label: "Home", to: "/" },
   { label: "About us", to: "/about" },
   { label: "Institutions", to: "#", dropdown: institutions },
+  { label: "Courses", to: "/#courses" },
+  { label: "Brochures", to: "/#brochures" },
   { label: "Campus Life", to: "/campus-life" },
   { label: "Contact Us", to: "/contact" },
 ];
@@ -47,7 +49,7 @@ const Navbar = () => {
               <div key={item.label} className="relative" ref={dropdownRef}>
                 <button
                   onClick={() => setDropdownOpen(!dropdownOpen)}
-                  className="px-4 py-2 text-sm font-semibold text-foreground hover:text-secondary transition-colors flex items-center gap-1"
+                  className="px-3.5 py-2 text-sm font-semibold text-foreground hover:text-secondary transition-colors flex items-center gap-1"
                 >
                   {item.label}
                   <ChevronDown className={`w-4 h-4 transition-transform ${dropdownOpen ? "rotate-180" : ""}`} />
@@ -67,16 +69,30 @@ const Navbar = () => {
                   </div>
                 )}
               </div>
+            ) : item.to.startsWith("/#") ? (
+              <a
+                key={item.label}
+                href={item.to}
+                className="px-3.5 py-2 text-sm font-semibold text-foreground hover:text-secondary transition-colors flex items-center gap-1"
+              >
+                {item.label}
+              </a>
             ) : (
               <Link
                 key={item.label}
                 to={item.to}
-                className="px-4 py-2 text-sm font-semibold text-foreground hover:text-secondary transition-colors flex items-center gap-1"
+                className="px-3.5 py-2 text-sm font-semibold text-foreground hover:text-secondary transition-colors flex items-center gap-1"
               >
                 {item.label}
               </Link>
             )
           )}
+
+          <a href="/#admissions" className="ml-3">
+            <button className="bg-secondary hover:bg-secondary/90 text-secondary-foreground text-xs font-bold px-4 py-2.5 rounded-full shadow-sm transition-all hover:shadow-md">
+              Apply Now 2026
+            </button>
+          </a>
         </div>
 
         <button
@@ -116,6 +132,15 @@ const Navbar = () => {
                   </div>
                 )}
               </div>
+            ) : item.to.startsWith("/#") ? (
+              <a
+                key={item.label}
+                href={item.to}
+                className="block px-6 py-3 text-sm font-semibold text-foreground hover:bg-accent transition-colors"
+                onClick={() => setOpen(false)}
+              >
+                {item.label}
+              </a>
             ) : (
               <Link
                 key={item.label}
@@ -127,6 +152,15 @@ const Navbar = () => {
               </Link>
             )
           )}
+          <div className="p-4">
+            <a
+              href="/#admissions"
+              onClick={() => setOpen(false)}
+              className="block w-full text-center bg-secondary hover:bg-secondary/90 text-secondary-foreground text-sm font-bold py-3 rounded-lg shadow-sm"
+            >
+              Apply Now 2026
+            </a>
+          </div>
         </div>
       )}
     </nav>

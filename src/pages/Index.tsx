@@ -5,6 +5,8 @@ import WelcomeSection from "@/components/WelcomeSection";
 import CoursesSection from "@/components/CoursesSection";
 import CampusSection from "@/components/CampusSection";
 import StatsSection from "@/components/StatsSection";
+import AdmissionsSection from "@/components/AdmissionsSection";
+import BrochureSection from "@/components/BrochureSection";
 import TestimonialSection from "@/components/ui/testimonial";
 import ScrollingBanner from "@/components/ScrollingBanner";
 import FooterSection from "@/components/FooterSection";
@@ -19,6 +21,8 @@ const Index = () => (
     <CoursesSection />
     <CampusSection />
     <StatsSection />
+    <AdmissionsSection />
+    <BrochureSection />
     <TestimonialSection />
     <FooterSection />
   </div>
