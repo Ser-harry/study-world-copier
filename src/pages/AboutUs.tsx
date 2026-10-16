@@ -27,10 +27,10 @@ const AboutUs = () => (
           <div>
             <span className="text-secondary font-semibold text-sm uppercase tracking-widest">About Our Institution</span>
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mt-3 mb-6">
-              Study World Group of Institutions
+              STUDY WORLD Group of Institutions
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Study World Group of Institutions is a multidisciplinary educational group established in 2009, committed to shaping future-ready professionals through quality education, practical learning, and industry-focused training. With a strong presence in Engineering, Arts and Science and Allied Health Sciences, we aim to provide students with a well-rounded academic experience that goes beyond textbooks.
+              STUDY WORLD Group of Institutions is a multidisciplinary educational group established in 2009, committed to shaping future-ready professionals through quality education, practical learning, and industry-focused training. With a strong presence in Engineering, Arts and Science and Allied Health Sciences, we aim to provide students with a well-rounded academic experience that goes beyond textbooks.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               Our institutions are built on the belief that education should empower individuals with both knowledge and real-world skills. Across all our colleges, we focus on blending academic excellence with hands-on learning, ensuring students are prepared to meet the demands of today's competitive world.
@@ -113,7 +113,7 @@ const AboutUs = () => (
           </div>
         </div>
         <p className="text-center text-primary-foreground/70 mt-12 text-base italic">
-          At Study World Group of Institutions, we don't just educate — we prepare students for life.
+          At STUDY WORLD Group of Institutions, we don't just educate — we prepare students for life.
         </p>
       </div>
     </section>

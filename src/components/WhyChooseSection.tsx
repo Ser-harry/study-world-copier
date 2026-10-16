@@ -3,11 +3,11 @@ import { useState } from "react";
 const tabs = [
   {
     label: "The Group",
-    content: "Study World Group's business originated from Dubai in the year 2005 and is currently registered in the British Virgin Islands. Through our wide network in different countries, we are engaged in a variety of education management activities ranging from K-12 schools to Universities. Our Group activities include Nurseries, Schools, Vocational Training Institutes, Colleges, Universities, and Education Management.",
+    content: "STUDY WORLD Group's business originated from Dubai in the year 2005 and is currently registered in the British Virgin Islands. Through our wide network in different countries, we are engaged in a variety of education management activities ranging from K-12 schools to Universities. Our Group activities include Nurseries, Schools, Vocational Training Institutes, Colleges, Universities, and Education Management.",
   },
   {
     label: "Principal",
-    content: "Study World College of Engineering (SWCE) is one of the reputed private institutions of higher education located in Coimbatore, India. Our campus is located in a serene suburban area which allows our budding engineers to focus their attention completely on studies, creativity and innovation. We provide the broadest possible scope and opportunity for academic exploration.",
+    content: "STUDY WORLD College of Engineering (SWCE) is one of the reputed private institutions of higher education located in Coimbatore, India. Our campus is located in a serene suburban area which allows our budding engineers to focus their attention completely on studies, creativity and innovation. We provide the broadest possible scope and opportunity for academic exploration.",
   },
   {
     label: "Vision & Mission",

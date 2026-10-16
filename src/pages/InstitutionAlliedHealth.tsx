@@ -17,7 +17,7 @@ const InstitutionAlliedHealth = () => (
       <img src={heroCampus} alt="Allied Health Sciences" className="absolute inset-0 w-full h-full object-cover" />
       <div className="absolute inset-0 bg-hero-overlay/80" />
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
-        <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-3">Allied Health Sciences</h1>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-3">STUDY WORLD COLLEGE OF ALLIED HEALTH SCIENCES</h1>
       </div>
     </section>
 
@@ -29,7 +29,7 @@ const InstitutionAlliedHealth = () => (
           Allied Health Sciences Programmes
         </h2>
         <p className="text-muted-foreground leading-relaxed">
-          Study World College of Allied Health Sciences is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai. 
+          STUDY WORLD College of Allied Health Sciences is affiliated to The Tamil Nadu Dr. M.G.R. Medical University, Chennai. 
           We prepare students to be skilled healthcare professionals through advanced practical training.
         </p>
       </div>

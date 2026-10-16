@@ -17,7 +17,7 @@ interface BrochureItem {
 const brochures: BrochureItem[] = [
   {
     id: "swce",
-    institution: "Study World College of Engineering",
+    institution: "STUDY WORLD College of Engineering",
     shortCode: "SWCE",
     tagline: "India's 1st International College • Designing the Future Through Global Collaboration",
     affiliation: ["AICTE Approved", "Anna University, Chennai", "TNEA Code: 2770", "IBM Knowledge Partner"],
@@ -34,7 +34,7 @@ const brochures: BrochureItem[] = [
   },
   {
     id: "swcas",
-    institution: "Study World College of Arts & Science",
+    institution: "STUDY WORLD College of Arts & Science",
     shortCode: "SWCAS",
     tagline: "Empowering Students for Global Careers • 26-Acre Green Campus",
     affiliation: ["Govt. of Tamil Nadu Approved", "Bharathiar University, Coimbatore", "Coimbatore Campus"],
@@ -51,7 +51,7 @@ const brochures: BrochureItem[] = [
   },
   {
     id: "swahs",
-    institution: "Study World College of Allied Health Sciences",
+    institution: "STUDY WORLD College of Allied Health Sciences",
     shortCode: "SWAHS",
     tagline: "Healthcare Education Aligned with Global Medical Standards",
     affiliation: ["The Tamil Nadu Dr. M.G.R. Medical University, Chennai", "Hospital Clinical Training"],

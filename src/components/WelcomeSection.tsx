@@ -28,10 +28,10 @@ const WelcomeSection = () => (
     <div className="container-custom">
       <div className="text-center max-w-3xl mx-auto mb-16">
         <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
-          Welcome To Study World College of Engineering
+          Welcome To STUDY WORLD College of Engineering
         </h2>
         <p className="text-muted-foreground leading-relaxed">
-          Started in 2009, Study World College of Engineering is one of the renowned private institutions of Coimbatore, India. The college offers a range of courses approved by AICTE and affiliated to Anna University.
+          Started in 2009, STUDY WORLD College of Engineering is one of the renowned private institutions of Coimbatore, India. The college offers a range of courses approved by AICTE and affiliated to Anna University.
         </p>
       </div>
 

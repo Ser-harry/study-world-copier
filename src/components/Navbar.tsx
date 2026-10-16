@@ -39,7 +39,7 @@ const Navbar = () => {
     <nav className="bg-background shadow-md sticky top-0 z-50">
       <div className="container-custom flex items-center justify-between px-4 sm:px-6 lg:px-8 py-3">
         <Link to="/" className="flex items-center gap-3">
-          <img src="/Study World Logo-01.png" alt="Study World College of Engineering" className="h-24 w-auto object-contain" />
+          <img src="/Study World Logo-01.png" alt="STUDY WORLD College of Engineering" className="h-24 w-auto object-contain" />
         </Link>
 
         {/* Desktop Nav */}
@@ -89,8 +89,8 @@ const Navbar = () => {
           )}
 
           <a href="/#admissions" className="ml-3">
-            <button className="bg-secondary hover:bg-secondary/90 text-secondary-foreground text-xs font-bold px-4 py-2.5 rounded-full shadow-sm transition-all hover:shadow-md">
-              Apply Now 2026
+            <button className="bg-secondary hover:bg-secondary/90 text-secondary-foreground text-xs font-bold px-4 py-2.5 rounded-full shadow-sm transition-all hover:shadow-md whitespace-nowrap">
+              Apply Now 2027
             </button>
           </a>
         </div>
@@ -158,7 +158,7 @@ const Navbar = () => {
               onClick={() => setOpen(false)}
               className="block w-full text-center bg-secondary hover:bg-secondary/90 text-secondary-foreground text-sm font-bold py-3 rounded-lg shadow-sm"
             >
-              Apply Now 2026
+              Apply Now 2027
             </a>
           </div>
         </div>

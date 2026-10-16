@@ -5,7 +5,7 @@ const ScrollingBanner = () => {
         {[...Array(10)].map((_, i) => (
           <span key={i} className="mx-8 text-sm font-bold uppercase tracking-widest flex items-center">
             <span className="w-2 h-2 bg-primary rounded-full mr-3 animate-pulse"></span>
-            Admissions 2026 Now Open – Secure Your Future Today | Enquire Now
+            Admissions Open 2026 to 2027 | Applications Open 2027 – Secure Your Future Today | Enquire Now
             <span className="mx-8 font-light text-secondary-foreground/50">|</span>
           </span>
         ))}

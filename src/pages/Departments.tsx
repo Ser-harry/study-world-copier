@@ -17,7 +17,7 @@ const Departments = () => (
       <img src={heroCampus} alt="Departments" className="absolute inset-0 w-full h-full object-cover" />
       <div className="absolute inset-0 bg-hero-overlay/80" />
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
-        <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-3">Our Departments</h1>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-primary-foreground mb-3">STUDY WORLD COLLEGE OF ENGINEERING</h1>
       </div>
     </section>
 
@@ -29,7 +29,7 @@ const Departments = () => (
           Engineering Programmes
         </h2>
         <p className="text-muted-foreground leading-relaxed">
-          Study World College of Engineering offers undergraduate programs approved by AICTE and affiliated to Anna University. Each department is equipped with state-of-the-art laboratories and experienced faculty.
+          STUDY WORLD College of Engineering offers undergraduate programs approved by AICTE and affiliated to Anna University. Each department is equipped with state-of-the-art laboratories and experienced faculty.
         </p>
       </div>
     </section>

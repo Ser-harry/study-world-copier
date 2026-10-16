@@ -8,10 +8,10 @@ const FooterSection = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-12">
         <div>
           <div className="flex items-center gap-3 mb-5">
-            <img src="/Study World Logo-01.png" alt="Study World" className="h-24 w-auto object-contain brightness-200" />
+            <img src="/Study World Logo-01.png" alt="STUDY WORLD" className="h-24 w-auto object-contain brightness-200" />
           </div>
           <p className="text-primary-foreground/70 text-sm leading-relaxed">
-            Study World Group of Institutions is a part of Study World Education Holding Group, empowering students worldwide with quality higher education since 2005.
+            STUDY WORLD Group of Institutions is a part of STUDY WORLD Education Holding Group, empowering students worldwide with quality higher education since 2005.
           </p>
         </div>
 
@@ -59,7 +59,7 @@ const FooterSection = () => (
       </div>
 
       <div className="border-t border-primary-foreground/10 pt-6 text-center text-xs text-primary-foreground/50">
-        © {new Date().getFullYear()} Study World Group of Institutions. Affiliated to Anna University, Bharathiar University & TN Dr. M.G.R. Medical University. All Rights Reserved.
+        © {new Date().getFullYear()} STUDY WORLD Group of Institutions. Affiliated to Anna University, Bharathiar University & TN Dr. M.G.R. Medical University. All Rights Reserved.
       </div>
     </div>
   </footer>

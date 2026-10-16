@@ -44,7 +44,7 @@ const HeroSection = () => {
           {/* Main Title slightly tighter mb */}
           <BlurFade delay={0.25} inView duration={0.8}>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground leading-tight pb-2">
-              Study World
+              STUDY WORLD
             </h1>
           </BlurFade>
           

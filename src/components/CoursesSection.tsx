@@ -139,17 +139,17 @@ export default function CoursesSection() {
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link to="/institutions/engineering">
               <Button variant="outline" className="text-xs sm:text-sm font-bold border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                College of Engineering (Anna Univ) →
+                STUDY WORLD College of Engineering (Anna Univ) →
               </Button>
             </Link>
             <Link to="/institutions/arts">
               <Button variant="outline" className="text-xs sm:text-sm font-bold border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground">
-                College of Arts & Science (Bharathiar Univ) →
+                STUDY WORLD College of Arts & Science (Bharathiar Univ) →
               </Button>
             </Link>
             <Link to="/institutions/allied-health">
               <Button variant="outline" className="text-xs sm:text-sm font-bold border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                College of Allied Health Sciences (TNMGRMU) →
+                STUDY WORLD College of Allied Health Sciences (TNMGRMU) →
               </Button>
             </Link>
           </div>

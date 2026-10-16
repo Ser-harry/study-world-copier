@@ -39,18 +39,18 @@ const CampusLife = () => (
     {/* Intro */}
     <section className="section-padding bg-background">
       <div className="container-custom text-center max-w-3xl mx-auto">
-        <span className="text-secondary font-semibold text-sm uppercase tracking-widest">Life at Study World</span>
+        <span className="text-secondary font-semibold text-sm uppercase tracking-widest">Life at STUDY WORLD</span>
         <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mt-3 mb-5">
           Beyond the Classroom
         </h2>
         <p className="text-muted-foreground leading-relaxed mb-4">
-          Life at Study World Group of Institutions offers a vibrant and enriching student experience that goes beyond academics. As a leading educational institution offering Engineering, Arts and Science, and Allied Health Sciences, we provide a dynamic campus environment where students can learn, explore, and grow holistically.
+          Life at STUDY WORLD Group of Institutions offers a vibrant and enriching student experience that goes beyond academics. As a leading educational institution offering Engineering, Arts and Science, and Allied Health Sciences, we provide a dynamic campus environment where students can learn, explore, and grow holistically.
         </p>
         <p className="text-muted-foreground leading-relaxed mb-4">
           From cultural events and technical fests to sports, clubs, and student activities, our campus life encourages active participation and skill development. Students gain exposure to teamwork, leadership, and real-world experiences that prepare them for future careers.
         </p>
         <p className="text-muted-foreground leading-relaxed">
-          With modern facilities, a supportive learning atmosphere, and diverse opportunities, campus life at Study World Group of Institutions plays a key role in shaping confident, well-rounded individuals ready to succeed in both professional and personal life.
+          With modern facilities, a supportive learning atmosphere, and diverse opportunities, campus life at STUDY WORLD Group of Institutions plays a key role in shaping confident, well-rounded individuals ready to succeed in both professional and personal life.
         </p>
       </div>
     </section>

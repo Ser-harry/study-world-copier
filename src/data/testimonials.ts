@@ -22,7 +22,7 @@ export const testimonialsData: Testimonial[] = [
     company: "Tata Consultancy Services (TCS)",
     avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&auto=format&fit=crop",
     initials: "AV",
-    content: "The dedicated placement training and state-of-the-art coding labs at Study World gave me the hands-on edge required to crack top tier technical interviews. The faculty mentorship here is unparalleled.",
+    content: "The dedicated placement training and state-of-the-art coding labs at STUDY WORLD gave me the hands-on edge required to crack top tier technical interviews. The faculty mentorship here is unparalleled.",
     rating: 5,
     year: "Batch of 2024"
   },
@@ -48,7 +48,7 @@ export const testimonialsData: Testimonial[] = [
     company: "Infosys Technologies",
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop",
     initials: "SN",
-    content: "The IBM knowledge partnership and cloud computing curriculum gave us enterprise credentials right while studying. Study World opens international doors for ambitious learners.",
+    content: "The IBM knowledge partnership and cloud computing curriculum gave us enterprise credentials right while studying. STUDY WORLD opens international doors for ambitious learners.",
     rating: 5,
     year: "Batch of 2024"
   },

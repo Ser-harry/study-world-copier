@@ -17,16 +17,16 @@ interface GlobalCampus {
 
 const globalCampuses: GlobalCampus[] = [
   {
-    name: "StudyWorld Institutions India",
+    name: "STUDY WORLD Institutions India",
     country: "India (Coimbatore, Tamil Nadu)",
     flag: "🇮🇳",
     type: "Higher Education Campuses",
-    description: "26-acre green campus housing Study World College of Engineering (SWCE), College of Arts & Science (SWCAS), and College of Allied Health Sciences (SWAHS).",
+    description: "26-acre green campus housing STUDY WORLD College of Engineering (SWCE), College of Arts & Science (SWCAS), and College of Allied Health Sciences (SWAHS).",
     logo: logoSwce,
     badge: "Engineering, Arts & Allied Health"
   },
   {
-    name: "StudyWorld Campus Dubai",
+    name: "STUDY WORLD Campus Dubai",
     country: "United Arab Emirates",
     flag: "🇦🇪",
     type: "International Higher Education",
@@ -35,7 +35,7 @@ const globalCampuses: GlobalCampus[] = [
     badge: "Dubai Academic City"
   },
   {
-    name: "StudyWorld Global College Malta",
+    name: "STUDY WORLD Global College Malta",
     country: "Malta (European Union)",
     flag: "🇲🇹",
     type: "European Accredited Campus",
@@ -44,7 +44,7 @@ const globalCampuses: GlobalCampus[] = [
     badge: "European Union (EU)"
   },
   {
-    name: "StudyWorld College Sri Lanka",
+    name: "STUDY WORLD College Sri Lanka",
     country: "Sri Lanka",
     flag: "🇱🇰",
     type: "International Academic Center",
@@ -53,7 +53,7 @@ const globalCampuses: GlobalCampus[] = [
     badge: "South Asia Gateway"
   },
   {
-    name: "StudyWorld Campus Saudi Arabia",
+    name: "STUDY WORLD Campus Saudi Arabia",
     country: "Kingdom of Saudi Arabia",
     flag: "🇸🇦",
     type: "Corporate & Higher Education",
@@ -93,17 +93,17 @@ export default function GlobalNetworkSection() {
         <div className="text-center max-w-3xl mx-auto mb-16 px-4">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 text-secondary border border-secondary/20 text-xs font-bold uppercase tracking-wider mb-3">
             <Globe className="w-3.5 h-3.5" />
-            Study World Education Holding Group
+            STUDY WORLD Education Holding Group
           </div>
           <h2 className="text-3xl md:text-5xl font-heading font-extrabold text-foreground mb-4">
             Our Global Network
           </h2>
           <div className="w-20 h-1.5 bg-secondary mx-auto rounded-full mb-5"></div>
           <p className="text-foreground/80 font-medium text-base md:text-lg italic leading-relaxed">
-            "Since its inception in the year 2005, the Study World Group has been on the rise in the International Education Sector, empowering students worldwide with knowledge that is on a par with the best universities of the world."
+            "Since its inception in the year 2005, the STUDY WORLD Group has been on the rise in the International Education Sector, empowering students worldwide with knowledge that is on a par with the best universities of the world."
           </p>
           <p className="text-muted-foreground text-sm mt-3">
-            Study World Group is stretching and multiplying exponentially across the globe — join us to build your borderless future today.
+            STUDY WORLD Group is stretching and multiplying exponentially across the globe — join us to build your borderless future today.
           </p>
         </div>
 
@@ -190,14 +190,14 @@ export default function GlobalNetworkSection() {
         {/* Official Holding Logos Bar */}
         <div className="py-8 px-6 rounded-2xl bg-muted/40 border border-border/80 mb-16 text-center">
           <p className="text-xs font-bold uppercase tracking-wider text-muted-foreground mb-6">
-            Study World Group Official Global Network Partners
+            STUDY WORLD Group Official Global Network Partners
           </p>
           <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-14 opacity-85 hover:opacity-100 transition-opacity">
-            <img src={logoSwce} alt="Study World College of Engineering" className="h-12 w-auto object-contain" />
+            <img src={logoSwce} alt="STUDY WORLD College of Engineering" className="h-12 w-auto object-contain" />
             <img src={logoDoveGreen} alt="Dove Green Private School Dubai" className="h-12 w-auto object-contain" />
-            <img src={logoMalta} alt="Study World Global College Malta" className="h-12 w-auto object-contain" />
-            <img src={logoLanka} alt="Study World Lanka Campus" className="h-12 w-auto object-contain" />
-            <img src={logoHolding} alt="Study World Education Holding Group" className="h-12 w-auto object-contain" />
+            <img src={logoMalta} alt="STUDY WORLD Global College Malta" className="h-12 w-auto object-contain" />
+            <img src={logoLanka} alt="STUDY WORLD Lanka Campus" className="h-12 w-auto object-contain" />
+            <img src={logoHolding} alt="STUDY WORLD Education Holding Group" className="h-12 w-auto object-contain" />
           </div>
         </div>
 
@@ -214,7 +214,7 @@ export default function GlobalNetworkSection() {
                 26-Acre Green Canopy Campus with Extensive Connectivity
               </h3>
               <p className="text-white/80 text-sm sm:text-base leading-relaxed">
-                Located on the scenic outskirts of Coimbatore, just 15 km from the Railway Station and 27 km from Coimbatore International Airport. Study World provides comprehensive transportation across major districts of Tamil Nadu and Kerala.
+                Located on the scenic outskirts of Coimbatore, just 15 km from the Railway Station and 27 km from Coimbatore International Airport. STUDY WORLD provides comprehensive transportation across major districts of Tamil Nadu and Kerala.
               </p>
 
               <div className="pt-2">

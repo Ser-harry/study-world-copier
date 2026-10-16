@@ -89,7 +89,7 @@ const AdmissionsSection = () => {
           <div className="lg:col-span-6 space-y-6">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-secondary/15 text-secondary border border-secondary/30 text-xs font-bold uppercase tracking-wider">
               <Sparkles className="w-3.5 h-3.5" />
-              Admissions Open for Academic Year 2026 - 2027
+              Admissions Open for Academic Year 2026 to 2027 | Applications Open 2027
             </div>
 
             <h2 className="text-3xl md:text-5xl font-heading font-extrabold text-foreground leading-tight">
@@ -148,7 +148,7 @@ const AdmissionsSection = () => {
             <div className="bg-card rounded-2xl shadow-xl border border-border p-6 sm:p-8 relative">
               <div className="mb-6">
                 <h3 className="font-heading font-bold text-2xl text-foreground">
-                  Online Application Form
+                  Online Application Form 2027
                 </h3>
                 <p className="text-xs sm:text-sm text-muted-foreground mt-1">
                   Fill in your details below to register your seat and request admission counselling.
@@ -213,9 +213,9 @@ const AdmissionsSection = () => {
                       className="w-full px-4 py-2.5 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-secondary text-sm transition-all"
                     >
                       <option value="All">All Institutions</option>
-                      <option value="Engineering (SWCE)">College of Engineering (SWCE)</option>
-                      <option value="Arts & Science (SWCAS)">College of Arts & Science (SWCAS)</option>
-                      <option value="Allied Health (SWAHS)">College of Allied Health Sciences (SWAHS)</option>
+                      <option value="Engineering (SWCE)">STUDY WORLD College of Engineering (SWCE)</option>
+                      <option value="Arts & Science (SWCAS)">STUDY WORLD College of Arts & Science (SWCAS)</option>
+                      <option value="Allied Health (SWAHS)">STUDY WORLD College of Allied Health Sciences (SWAHS)</option>
                     </select>
                   </div>
 
@@ -289,7 +289,7 @@ const AdmissionsSection = () => {
                 </Button>
 
                 <p className="text-[11px] text-center text-muted-foreground pt-1">
-                  🔒 Your information is secure with Study World Admissions Office. No spam guaranteed.
+                  🔒 Your information is secure with STUDY WORLD Admissions Office. No spam guaranteed.
                 </p>
               </form>
             </div>

@@ -151,7 +151,7 @@ const ContactUs = () => {
           <h2 className="text-2xl font-heading font-bold text-foreground text-center mb-8">Find Us on the Map</h2>
           <div className="rounded-xl overflow-hidden shadow-lg">
             <iframe
-              title="Study World College Location"
+              title="STUDY WORLD College Location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.069458925567!2d76.958639075702!3d10.882329259206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85b1f9cfc7743%3A0x4dc89d9c9b59b0eb!2sStudy%20World%20Group%20of%20Institution!5e0!3m2!1sen!2sin!4v1712289410114!5m2!1sen!2sin"
               width="100%"
               height="400"
